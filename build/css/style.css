@@ -447,6 +447,19 @@ input[type="radio"].visually-hidden {
   top: 21px;
   right: 25px;
 }
+.tariff__toggle2::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-bottom: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  position: absolute;
+  top: 21px;
+  right: 25px;
+}
 .tariff__link ul,
 .tariff__close ul,
 .tariff__open ul {
@@ -645,8 +658,4 @@ input[type="radio"].visually-hidden {
     font-size: 30px;
     color: #0394f5;
   }
-}
-.open ul {
-  padding: 0;
-  list-style-type: none;
 }
