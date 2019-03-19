@@ -273,6 +273,26 @@ input[type="radio"].visually-hidden {
       -ms-flex-align: center;
           align-items: center;
 }
+.tariff__toggle,
+.tariff__toggle2 {
+  outline: none;
+}
+.tariff__toggle {
+  border: none;
+  background-color: #ffffff;
+}
+.tariff__toggle:active,
+.tariff__toggle:hover {
+  background-color: #ffffff;
+}
+.tariff__toggle2 {
+  border: none;
+  background-color: #0394f5;
+}
+.tariff__toggle2:active,
+.tariff__toggle2:hover {
+  background-color: #0394f5;
+}
 .tariff__close {
   display: none;
 }
@@ -525,6 +545,7 @@ input[type="radio"].visually-hidden {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .tariff__toggle2,
   .tariff__toggle {
     display: none;
   }
