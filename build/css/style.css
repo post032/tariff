@@ -550,6 +550,8 @@ input[type="radio"].visually-hidden {
     display: none;
   }
   .tariff__close,
+  .tariff__link,
+  .tariff__close,
   .tariff__pay {
     display: block;
   }
