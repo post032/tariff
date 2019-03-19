@@ -22,19 +22,19 @@ $(function(){
 $(function(){
     $('#link2').on('click', function() {
        $('#window2').slideToggle(300, function(){
-            if( $(this).hasClass('toriff__open')){
-                $(this).removeClass('toriff__open');
-                $(this).addClass('toriff__close');
+            if( $(this).hasClass('toriff__close')){
+                $(this).addClass('toriff__open');
+                $(this).removeClass('toriff__close');
                 $(this).removeAttr('style');
-                $(this).hide();
-                $('#header2').addClass('tariff__header--radius')
+                $('#header2').removeClass('tariff__header--radius')
+                $('.toriff__open').show();
             }
             else {
-              $(this).addClass('toriff__open');
-              $(this).removeClass('toriff__close');
+              $(this).removeClass('toriff__open');
+              $(this).addClass('toriff__close');
               $(this).removeAttr('style');
-              $('#header2').removeClass('tariff__header--radius')
-              $('.toriff__open').show();
+              $(this).hide();
+              $('#header2').addClass('tariff__header--radius')
             }
        });
     });
